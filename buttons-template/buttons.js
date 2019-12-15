@@ -3,16 +3,17 @@ var button2 = document.getElementById("button2");
 var button3 = document.getElementById("button3");
 var div = document.getElementById("container");
 var img = document.getElementById("img1");
+var body = document.getElementByTagName("BODY");
 var Btnvalue1 = 0;
 var Btnvalue2 = 0;
 var Btnvalue3 = 0;
 
 
 button1.innerHTML = Btnvalue1;
-button2.innerHTML = Btnvalue2;
-button3.innerHTML = Btnvalue3;
 
-button1.onclick = function(){
+button1.onclick = btn1;
+
+function btn1(){
 	Btnvalue1++;
 	button1.innerHTML = Btnvalue1;
 	div.style.backgroundImage = "url(images/bg1.jpg)";
@@ -27,8 +28,9 @@ button1.onclick = function(){
 
 button2.innerHTML = Btnvalue2;
 
-button2.onclick = function(){
+button2.onclick = btn2;
 
+function btn2(){
 	Btnvalue2++;
 	button2.innerHTML = Btnvalue2;
 	div.style.backgroundImage = "url(images/bg2.jpg)";
@@ -44,7 +46,9 @@ button2.onclick = function(){
 
 button3.innerHTML = Btnvalue3;
 
-button3.onclick = function(){
+button3.onclick = btn3;
+
+function btn3(){
 	Btnvalue3++;
 	button3.innerHTML = Btnvalue3;
 	div.style.backgroundImage = "url(images/bg3.jpg)";
